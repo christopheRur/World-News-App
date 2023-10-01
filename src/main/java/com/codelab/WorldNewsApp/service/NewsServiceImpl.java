@@ -30,7 +30,7 @@ public class NewsServiceImpl implements NewsService {
         httpGet.addHeader("X-Api-Key", apiKey);
 
         try {
-            ...
+
         }catch (Exception e){
 
 
