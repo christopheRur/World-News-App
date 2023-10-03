@@ -1,9 +1,10 @@
 package com.codelab.WorldNewsApp.model;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.json.JSONObject;
 
 @Data
 @NoArgsConstructor
@@ -12,6 +13,7 @@ public class News {
 
     private String country;
     private String Category;
-    private JSONObject responseBody;
+    private JsonObject fullResponseBody;
+    private JsonArray response;
 
 }
