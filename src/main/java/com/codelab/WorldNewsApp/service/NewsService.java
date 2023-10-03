@@ -1,12 +1,14 @@
 package com.codelab.WorldNewsApp.service;
 
 import com.codelab.WorldNewsApp.model.News;
-import com.google.gson.JsonObject;
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
 
 @Service
 public interface NewsService {
-    public JsonObject getNews(News news);
+    public JSONObject getNews(News news) throws IOException;
 
-    public JsonObject fetchNews(String apiKey, String apiUrl, News news);
+    public JSONObject fetchNews(String apiKey, String apiUrl, News news) throws IOException;
 }
